@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100;300;400&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Press Start 2P", cursive;
+    line-height: 1;
+    background-color: #333;
+    color: #fff;
+    font-size: 2rem;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+button {
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    font-family: "Press Start 2P", cursive;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.range {
+    font-size: 2rem;
+}
+
+.sub-container {
+    display: flex;
+    margin: 2rem;
+}
+
+.sub-container-1 {
+    justify-content: space-between;
+    height: 30%;
+}
+
+.sub-container-2 {
+    height: 70%;
+}
+
+.bottom-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    border: none;
+    font-size: 7rem;
+}
+
+.bottom-part-1 {
+    gap: 4rem;
+}
+
+.bottom-part-2 {
+    font-size: 2rem;
+    gap: 3rem;
+}
+
+.bottom-part-2 p:first-child {
+    margin-bottom: 5rem;
+}
+
+.restart-btn {
+    display: flex;
+    align-items: flex-start;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    /* height: 10rem; */
+    font-size: 5rem;
+    width: 20rem;
+    padding: 10% 0 10% 50%;
+    align-items: center;
+    background-color: #333;
+    border: 3px solid #fff;
+    outline: none;
+    color: #fff;
+}
+
+.temp {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    height: 0.6rem;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 2rem;
+}
+
+.hidden-number {
+    font-size: 10rem;
+    display: inline-block;
+    background-color: #fff;
+    padding: 2rem 5rem;
+    top: 24%;
+    left: 45%;
+    color: #333;
+    position: absolute;
+}
