@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guess My Number</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <button type="button" class="btn again">Again!</button>
+                <h3 class="h3">(Between 1 and 20)</h3>
+            </header>
+            <section class="section">
+                <h1 class="h1">Guess My Number!</h1>
+                <div class="secret-num">
+                    <div class="line"></div>
+                    <div class="secret-box">?</div>
+                </div>
+            </section>
+            <main class="main">
+                <div class="left">
+                    <label for="input-num">
+                        <input
+                            type="number"
+                            id="input-num"
+                            name="input"
+                            max="20"
+                            min="1"
+                        />
+                    </label>
+                    <button type="button" class="btn check">Check!</button>
+                </div>
+                <div class="right">
+                    <h2 class="h2 sentence">Start guessing...</h2>
+                    <h2 class="h2">Score: <span class="score">20</span></h2>
+                    <h2 class="h2">
+                        Highscore: <span class="highscore">0</span>
+                    </h2>
+                </div>
+            </main>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
 </html>
